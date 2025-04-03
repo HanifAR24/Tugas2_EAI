@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf App</title>
+    <!-- Menggunakan Tailwind CSS dari CDN (Untuk pengembangan, disarankan di produksi install Tailwind) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold text-center mb-4">BookShelf App</h1>
+        
+        <!-- Form input untuk menambahkan buku -->
+        <div class="mb-4">
+            <input type="text" id="title" class="w-full p-2 border rounded-lg" placeholder="Judul Buku">
+            <input type="text" id="author" class="w-full p-2 border rounded-lg mt-2" placeholder="Penulis">
+            <input type="text" id="published" class="w-full p-2 border rounded-lg mt-2" placeholder="Tahun Terbit">
+            <button id="addBookBtn" class="w-full bg-green-500 text-white p-2 mt-2 rounded-lg">Tambah Buku</button>
+        </div>
+        
+        <!-- Kontainer untuk menampilkan daftar buku -->
+        <div id="booksContainer" class="mb-4"></div>
+        
+        <!-- Kontainer untuk menampilkan produk (buku) lain dalam kategori -->
+        <div id="categoryContainer" class="mb-4"></div>
+    </div>
+    
+    <!-- Pastikan file script.js berada di folder yang sama -->
+    <script src="script.js"></script>
+</body>
+</html>
