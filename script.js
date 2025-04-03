@@ -1,4 +1,4 @@
-const apiBaseUrl = "http://localhost:5000"; // Ganti dengan URL API back-end jika berbeda
+const apiBaseUrl = "http://localhost:5000"; 
 
 // Function untuk mengambil dan menampilkan semua buku
 async function getBooks() {
